@@ -1,5 +1,5 @@
-is_summer = True
-temperature = 90
+is_summer = False
+temperature = 85
 is_raining = True
 
 
@@ -32,5 +32,9 @@ elif is_summer == True and temperature < 85:
     print("Not hot enough for the beach...I guess no Corona for me :/")
 elif is_summer == False and temperature > 85:
     print("It's so hot it feels like summer")
+elif is_summer == False and is_raining == False:
+    print("It must be fall")
+elif is_summer == False and is_raining == True and temperature == 85:
+    print("Global warming!")
 else:
     None
