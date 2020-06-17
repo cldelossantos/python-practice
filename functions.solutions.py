@@ -1,4 +1,6 @@
 import pprint
+# TOP 20 GOAL LEADERS OF FIFA WOMEN'S WORLD CUP 2019
+
 player_stats = [
     {
         "name": "Ellen White",
@@ -161,34 +163,31 @@ player_stats = [
         "assists": 0,
     },
 ]
-# pprint.pprint(player_stats[1]['team'])
 
-# 1) Write a function called array_length that takes an array as an argument and returns the length of that array.
+# 1) Print the length of the array.
+    # print(len(player_stats))
 
-def array_length(arr):
-    return len(arr)
+# 2) Print a player's stat sheet.
+    # print(player_stats['name'])
 
-
-print(array_length(player_stats))
-
-
-# 2) Write a function called find_player that takes an array and a name as arguments and returns that player's stat sheet.
+# 3) Print the names of each player.
+    # for i in player_stats:
+    #   print(i['name'])
 
 
-def find_player(arr,name):
-    for player in arr:
-        if player['name'] == name:
-            return player
-
-pprint.pprint(find_player(player_stats, 'Alex Morgan'))
+# 4) Print all the player names that scored 6 goals.
+    # for i in player_stats:
+    #   if i["goals"] == 6:
+    #     print(i['name'])
 
 
+# 5) Print all the names and the team or the players that played 7 games.
+    # for i in player_stats:
+    #   if i["games_played"] == 7:
+    #     print(i['name'], i['team'])
 
 
-# 3) Write a function called player_names that takes an array as an argument and returns a new array containing only the names of each player.
-
-def player_names(arr):
-    for player in arr:
-        if player ['name'] == name:
-            return player
-print(player_names(player_stats))
+# 6) Print all the player names that scored 3 goals or less.
+    # for i in player_stats:
+    #   if i['goals'] <= 3:
+    #       print(i['name'])
